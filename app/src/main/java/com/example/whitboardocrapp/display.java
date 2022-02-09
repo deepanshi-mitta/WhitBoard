@@ -42,7 +42,8 @@ public static int current_brush= Color.BLACK;
       paint_brush.setStyle(Paint.Style.STROKE);
       paint_brush.setStrokeCap(Paint.Cap.ROUND);
       paint_brush.setStrokeJoin(Paint.Join.ROUND);
-      paint_brush.setStrokeWidth(10f);
+      paint_brush.setStrokeWidth(40f);
+
       params=new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
     }
@@ -68,6 +69,8 @@ public static int current_brush= Color.BLACK;
 
     @Override
     protected void onDraw(Canvas canvas) {
+        canvas.save();
+        canvas.drawColor(Color.WHITE);
         for(int i=0;i<pathList.size();i++){
             paint_brush.setColor(colorList.get(i));
             canvas.drawPath(pathList.get(i),paint_brush);
