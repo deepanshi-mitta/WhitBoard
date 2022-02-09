@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#acff1c"
+    android:backgroundTint="#ffffff"
     android:background="#baff2e"
     android:padding="15dp">
     <TextView

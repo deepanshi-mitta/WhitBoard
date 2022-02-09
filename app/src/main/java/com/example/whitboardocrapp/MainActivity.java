@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public static Paint paint_brush = new Paint();
     Bitmap bitmap;
     //private String stringResult = null;
+    //
     private ConstraintLayout constraintLayout;
     String S;
 
